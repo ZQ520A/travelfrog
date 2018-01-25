@@ -131,7 +131,7 @@
 }
 }
 -(void)reportScore:(NSInteger)inputScore{
-    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:@"MyFirstLeaderboard"];
+    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:kGameCenterBoardID];
     score.value = inputScore;
     [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
         if (error != nil) {

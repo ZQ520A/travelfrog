@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9849F39019DC2777006FF547"
-               BuildableName = "Sakura Fly.app"
-               BlueprintName = "Sakura Fly"
+               BuildableName = "TravelFrog.app"
+               BlueprintName = "TravelFrog"
                ReferencedContainer = "container:SakuraFly.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -43,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9849F39019DC2777006FF547"
-            BuildableName = "Sakura Fly.app"
-            BlueprintName = "Sakura Fly"
+            BuildableName = "TravelFrog.app"
+            BlueprintName = "TravelFrog"
             ReferencedContainer = "container:SakuraFly.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,6 +56,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -66,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9849F39019DC2777006FF547"
-            BuildableName = "Sakura Fly.app"
-            BlueprintName = "Sakura Fly"
+            BuildableName = "TravelFrog.app"
+            BlueprintName = "TravelFrog"
             ReferencedContainer = "container:SakuraFly.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +87,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9849F39019DC2777006FF547"
-            BuildableName = "Sakura Fly.app"
-            BlueprintName = "Sakura Fly"
+            BuildableName = "TravelFrog.app"
+            BlueprintName = "TravelFrog"
             ReferencedContainer = "container:SakuraFly.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3E851E461B5054F900DB0BC2 /* ScoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E851E451B5054F900DB0BC2 /* ScoreLabel.m */; };
-		3EA67CB81B549B69002847CC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA67CB71B549B69002847CC /* GameKit.framework */; };
 		3EA67CC71B55F686002847CC /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EA67CC51B55F686002847CC /* MyParticle.sks */; };
 		3EA67CCE1B560AE3002847CC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA67CCD1B560AE3002847CC /* iAd.framework */; };
-		3EA67CD01B560EBF002847CC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA67CCF1B560EBF002847CC /* StoreKit.framework */; };
 		3EAE66241C6F9E9800F0EDB8 /* chip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EAE66231C6F9E9800F0EDB8 /* chip.png */; };
-		3EAE67411C7A2A9E00F0EDB8 /* Sakura_FlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE67401C7A2A9E00F0EDB8 /* Sakura_FlyTests.swift */; };
 		3EDB6B7F1C951142007BF24F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDB6B7E1C951142007BF24F /* Default-568h@2x.png */; };
 		3EED2E441B51FD35008E998F /* backGround.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EED2E431B51FD35008E998F /* backGround.mp3 */; };
+		846D1D03201876F4004F5632 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846D1D02201876F4004F5632 /* StoreKit.framework */; };
+		846D1D0520187FF7004F5632 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846D1D0420187FF7004F5632 /* GameKit.framework */; };
 		98476F8519DF98BA001AB9C1 /* RestartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98476F8419DF98BA001AB9C1 /* RestartLabel.m */; };
 		98476F8B19DFC39C001AB9C1 /* sfx_hit.caf in Resources */ = {isa = PBXBuildFile; fileRef = 98476F8819DFC39C001AB9C1 /* sfx_hit.caf */; };
 		98476F8D19DFC39C001AB9C1 /* sfx_wing.caf in Resources */ = {isa = PBXBuildFile; fileRef = 98476F8A19DFC39C001AB9C1 /* sfx_wing.caf */; };
@@ -31,37 +30,28 @@
 		9849F3CB19DC2811006FF547 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9849F3CA19DC2811006FF547 /* SpriteKit.framework */; };
 		9849F3CE19DC2830006FF547 /* PrimaryScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9849F3CD19DC2830006FF547 /* PrimaryScene.m */; };
 		9849F3D119DC285E006FF547 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9849F3D019DC285E006FF547 /* BaseScene.m */; };
+		99A7619D2D155A5DFAD383DF /* Pods_TravelFrog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D9D9398F072448BA2D9795 /* Pods_TravelFrog.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3EAE67431C7A2A9E00F0EDB8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9849F38919DC2777006FF547 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9849F39019DC2777006FF547;
-			remoteInfo = "Sakura Fly";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		1EE58FC2552816D8065A7F3E /* Pods-TravelFrog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFrog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFrog/Pods-TravelFrog.debug.xcconfig"; sourceTree = "<group>"; };
 		3E851E441B5054F900DB0BC2 /* ScoreLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreLabel.h; path = Scenes/ScoreLabel.h; sourceTree = "<group>"; };
 		3E851E451B5054F900DB0BC2 /* ScoreLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoreLabel.m; path = Scenes/ScoreLabel.m; sourceTree = "<group>"; };
-		3EA67CB71B549B69002847CC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		3EA67CC51B55F686002847CC /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		3EA67CCD1B560AE3002847CC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		3EA67CCF1B560EBF002847CC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3EAE66231C6F9E9800F0EDB8 /* chip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chip.png; path = SupportingFiles/chip.png; sourceTree = "<group>"; };
-		3EAE673E1C7A2A9E00F0EDB8 /* Sakura FlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sakura FlyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EAE67401C7A2A9E00F0EDB8 /* Sakura_FlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sakura_FlyTests.swift; sourceTree = "<group>"; };
-		3EAE67421C7A2A9E00F0EDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EDB6B7E1C951142007BF24F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3EED2E431B51FD35008E998F /* backGround.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backGround.mp3; sourceTree = "<group>"; };
+		4C58B32F04BEC30D72C478C1 /* Pods-TravelFrog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFrog.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFrog/Pods-TravelFrog.release.xcconfig"; sourceTree = "<group>"; };
+		846D1D02201876F4004F5632 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		846D1D0420187FF7004F5632 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		846D1D0620188134004F5632 /* TravelFrog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravelFrog.entitlements; sourceTree = "<group>"; };
 		98476F8319DF98BA001AB9C1 /* RestartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestartLabel.h; path = Scenes/RestartLabel.h; sourceTree = "<group>"; };
 		98476F8419DF98BA001AB9C1 /* RestartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestartLabel.m; path = Scenes/RestartLabel.m; sourceTree = "<group>"; };
 		98476F8819DFC39C001AB9C1 /* sfx_hit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_hit.caf; sourceTree = "<group>"; };
 		98476F8A19DFC39C001AB9C1 /* sfx_wing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_wing.caf; sourceTree = "<group>"; };
 		98476F9019DFC7E9001AB9C1 /* sfx_point.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_point.caf; sourceTree = "<group>"; };
-		9849F39119DC2777006FF547 /* Sakura Fly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sakura Fly.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9849F39119DC2777006FF547 /* TravelFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9849F39419DC2777006FF547 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9849F39619DC2777006FF547 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9849F39819DC2777006FF547 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -81,28 +71,23 @@
 		9849F3CF19DC285E006FF547 /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseScene.h; path = Scenes/BaseScene.h; sourceTree = "<group>"; };
 		9849F3D019DC285E006FF547 /* BaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseScene.m; path = Scenes/BaseScene.m; sourceTree = "<group>"; };
 		9849F3D319DC2ACF006FF547 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Defines.h; path = SakuraFly/SupportingFiles/Common/Defines.h; sourceTree = SOURCE_ROOT; };
+		98D9D9398F072448BA2D9795 /* Pods_TravelFrog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelFrog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B474041B1C97307800AEADE9 /* GameKitHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameKitHeaders.h; path = "Sakura FlyTests/GameKitHeaders.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EAE673B1C7A2A9E00F0EDB8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9849F38E19DC2777006FF547 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3EA67CCE1B560AE3002847CC /* iAd.framework in Frameworks */,
-				3EA67CD01B560EBF002847CC /* StoreKit.framework in Frameworks */,
+				846D1D03201876F4004F5632 /* StoreKit.framework in Frameworks */,
+				846D1D0520187FF7004F5632 /* GameKit.framework in Frameworks */,
 				9849F3CB19DC2811006FF547 /* SpriteKit.framework in Frameworks */,
 				9849F39719DC2777006FF547 /* CoreGraphics.framework in Frameworks */,
 				9849F39919DC2777006FF547 /* UIKit.framework in Frameworks */,
 				9849F39519DC2777006FF547 /* Foundation.framework in Frameworks */,
-				3EA67CB81B549B69002847CC /* GameKit.framework in Frameworks */,
+				99A7619D2D155A5DFAD383DF /* Pods_TravelFrog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,13 +105,13 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		3EAE673F1C7A2A9E00F0EDB8 /* Sakura FlyTests */ = {
+		79DED0A0FFA4F133E462E659 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3EAE67401C7A2A9E00F0EDB8 /* Sakura_FlyTests.swift */,
-				3EAE67421C7A2A9E00F0EDB8 /* Info.plist */,
+				1EE58FC2552816D8065A7F3E /* Pods-TravelFrog.debug.xcconfig */,
+				4C58B32F04BEC30D72C478C1 /* Pods-TravelFrog.release.xcconfig */,
 			);
-			path = "Sakura FlyTests";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		98476F8719DFC39C001AB9C1 /* Sound */ = {
@@ -144,19 +129,19 @@
 		9849F38819DC2777006FF547 = {
 			isa = PBXGroup;
 			children = (
+				846D1D0620188134004F5632 /* TravelFrog.entitlements */,
 				3EDB6B7E1C951142007BF24F /* Default-568h@2x.png */,
 				9849F39A19DC2777006FF547 /* Sakura Fly */,
-				3EAE673F1C7A2A9E00F0EDB8 /* Sakura FlyTests */,
 				9849F39319DC2777006FF547 /* Frameworks */,
 				9849F39219DC2777006FF547 /* Products */,
+				79DED0A0FFA4F133E462E659 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		9849F39219DC2777006FF547 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9849F39119DC2777006FF547 /* Sakura Fly.app */,
-				3EAE673E1C7A2A9E00F0EDB8 /* Sakura FlyTests.xctest */,
+				9849F39119DC2777006FF547 /* TravelFrog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,15 +149,16 @@
 		9849F39319DC2777006FF547 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				846D1D0420187FF7004F5632 /* GameKit.framework */,
+				846D1D02201876F4004F5632 /* StoreKit.framework */,
 				B474041B1C97307800AEADE9 /* GameKitHeaders.h */,
-				3EA67CCF1B560EBF002847CC /* StoreKit.framework */,
 				3EA67CCD1B560AE3002847CC /* iAd.framework */,
-				3EA67CB71B549B69002847CC /* GameKit.framework */,
 				9849F3CA19DC2811006FF547 /* SpriteKit.framework */,
 				9849F39419DC2777006FF547 /* Foundation.framework */,
 				9849F39619DC2777006FF547 /* CoreGraphics.framework */,
 				9849F39819DC2777006FF547 /* UIKit.framework */,
 				9849F3AD19DC2777006FF547 /* XCTest.framework */,
+				98D9D9398F072448BA2D9795 /* Pods_TravelFrog.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,39 +217,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3EAE673D1C7A2A9E00F0EDB8 /* Sakura FlyTests */ = {
+		9849F39019DC2777006FF547 /* TravelFrog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3EAE67451C7A2A9E00F0EDB8 /* Build configuration list for PBXNativeTarget "Sakura FlyTests" */;
+			buildConfigurationList = 9849F3BD19DC2777006FF547 /* Build configuration list for PBXNativeTarget "TravelFrog" */;
 			buildPhases = (
-				3EAE673A1C7A2A9E00F0EDB8 /* Sources */,
-				3EAE673B1C7A2A9E00F0EDB8 /* Frameworks */,
-				3EAE673C1C7A2A9E00F0EDB8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3EAE67441C7A2A9E00F0EDB8 /* PBXTargetDependency */,
-			);
-			name = "Sakura FlyTests";
-			productName = "Sakura FlyTests";
-			productReference = 3EAE673E1C7A2A9E00F0EDB8 /* Sakura FlyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9849F39019DC2777006FF547 /* Sakura Fly */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9849F3BD19DC2777006FF547 /* Build configuration list for PBXNativeTarget "Sakura Fly" */;
-			buildPhases = (
+				D0469D22B17BDEC9D8AC3011 /* [CP] Check Pods Manifest.lock */,
 				9849F38D19DC2777006FF547 /* Sources */,
 				9849F38E19DC2777006FF547 /* Frameworks */,
 				9849F38F19DC2777006FF547 /* Resources */,
+				66AEF361F126D6502C962675 /* [CP] Embed Pods Frameworks */,
+				62B4D02750A137FBEA482008 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Sakura Fly";
+			name = TravelFrog;
 			productName = SakuraFly;
-			productReference = 9849F39119DC2777006FF547 /* Sakura Fly.app */;
+			productReference = 9849F39119DC2777006FF547 /* TravelFrog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -276,14 +247,10 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Chenglin;
 				TargetAttributes = {
-					3EAE673D1C7A2A9E00F0EDB8 = {
-						CreatedOnToolsVersion = 7.2.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = 9849F39019DC2777006FF547;
-					};
 					9849F39019DC2777006FF547 = {
-						DevelopmentTeam = CYNFYQQLZ9;
+						DevelopmentTeam = EEBC8VX8FL;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
 								enabled = 1;
@@ -310,20 +277,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9849F39019DC2777006FF547 /* Sakura Fly */,
-				3EAE673D1C7A2A9E00F0EDB8 /* Sakura FlyTests */,
+				9849F39019DC2777006FF547 /* TravelFrog */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3EAE673C1C7A2A9E00F0EDB8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9849F38F19DC2777006FF547 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,15 +301,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		3EAE673A1C7A2A9E00F0EDB8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		62B4D02750A137FBEA482008 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EAE67411C7A2A9E00F0EDB8 /* Sakura_FlyTests.swift in Sources */,
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelFrog/Pods-TravelFrog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
+		66AEF361F126D6502C962675 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelFrog/Pods-TravelFrog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelFrog/Pods-TravelFrog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0469D22B17BDEC9D8AC3011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelFrog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		9849F38D19DC2777006FF547 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,14 +372,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3EAE67441C7A2A9E00F0EDB8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9849F39019DC2777006FF547 /* Sakura Fly */;
-			targetProxy = 3EAE67431C7A2A9E00F0EDB8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		9849F39D19DC2777006FF547 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -387,46 +384,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3EAE67461C7A2A9E00F0EDB8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Sakura FlyTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leetcode.swift.Sakura-FlyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sakura Fly.app/Sakura Fly";
-			};
-			name = Debug;
-		};
-		3EAE67471C7A2A9E00F0EDB8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Sakura FlyTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leetcode.swift.Sakura-FlyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sakura Fly.app/Sakura Fly";
-			};
-			name = Release;
-		};
 		9849F3BB19DC2777006FF547 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -515,11 +472,16 @@
 		};
 		9849F3BE19DC2777006FF547 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EE58FC2552816D8065A7F3E /* Pods-TravelFrog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "${SRCROOT}/OptimizationProfiles/$(PROJECT_NAME).profdata";
+				CODE_SIGN_ENTITLEMENTS = TravelFrog.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = EEBC8VX8FL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SakuraFly/SakuraFly-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -528,9 +490,10 @@
 				);
 				INFOPLIST_FILE = "SakuraFly/SakuraFly-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.3lgy.paper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travel.frog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6cb9fc9e-a41e-4e77-934c-f80fd00264ff";
+				PROVISIONING_PROFILE_SPECIFIER = com.travel.frog;
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -538,19 +501,28 @@
 		};
 		9849F3BF19DC2777006FF547 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C58B32F04BEC30D72C478C1 /* Pods-TravelFrog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "${SRCROOT}/OptimizationProfiles/$(PROJECT_NAME).profdata";
+				CODE_SIGN_ENTITLEMENTS = TravelFrog.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = EEBC8VX8FL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SakuraFly/SakuraFly-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "UIKitm=3";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"UIKitm=3",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "SakuraFly/SakuraFly-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.3lgy.paper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travel.frog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6cb9fc9e-a41e-4e77-934c-f80fd00264ff";
+				PROVISIONING_PROFILE_SPECIFIER = com.travel.frog;
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -559,15 +531,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3EAE67451C7A2A9E00F0EDB8 /* Build configuration list for PBXNativeTarget "Sakura FlyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3EAE67461C7A2A9E00F0EDB8 /* Debug */,
-				3EAE67471C7A2A9E00F0EDB8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9849F38C19DC2777006FF547 /* Build configuration list for PBXProject "SakuraFly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -577,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9849F3BD19DC2777006FF547 /* Build configuration list for PBXNativeTarget "Sakura Fly" */ = {
+		9849F3BD19DC2777006FF547 /* Build configuration list for PBXNativeTarget "TravelFrog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9849F3BE19DC2777006FF547 /* Debug */,

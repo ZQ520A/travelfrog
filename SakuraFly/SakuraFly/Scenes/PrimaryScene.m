@@ -73,7 +73,7 @@ static const uint32_t flowerCategory = 0x1 << 4;
     GKGameCenterViewController *gcViewController = [[GKGameCenterViewController alloc] init];
     gcViewController.gameCenterDelegate = self;
     gcViewController.viewState = GKGameCenterViewControllerStateLeaderboards;
-    gcViewController.leaderboardIdentifier = @"MyFirstLeaderboard";
+    gcViewController.leaderboardIdentifier = kGameCenterBoardID;
     [self.view.window.rootViewController presentViewController:gcViewController animated:YES completion:nil];
     
 }
