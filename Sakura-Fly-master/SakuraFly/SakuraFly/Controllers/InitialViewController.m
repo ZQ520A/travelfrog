@@ -98,7 +98,7 @@
     skView.showsFPS = NO;
     skView.showsNodeCount = NO;
 #else
-    [self authenticateLocalPlayer];
+//    [self authenticateLocalPlayer];
 #endif
     _mainScene = [[PrimaryScene alloc] initWithSize:CGSizeMake(skView.bounds.size.width, skView.bounds.size.height)];
     _mainScene.scaleMode = SKSceneScaleModeAspectFit;

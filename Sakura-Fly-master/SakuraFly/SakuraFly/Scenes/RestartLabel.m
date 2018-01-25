@@ -127,19 +127,19 @@
     }else if(touchNode==_gameCenterNode || touchNode==_gameCenterLabel){
         if ([_delegate respondsToSelector:@selector(restartView:didPressLeaderboardButton:)]) {
             [_delegate restartView:self didPressLeaderboardButton:_button];
+        }
     }
 }
+- (void)reportScore:(NSInteger)inputScore
+{
+//    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:@"MyFirstLeaderboard"];
+//    score.value = inputScore;
+//    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+//        if (error != nil) {
+//            NSLog(@"%@", [error localizedDescription]);
+//        }
+//    }];
 }
--(void)reportScore:(NSInteger)inputScore{
-    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:@"MyFirstLeaderboard"];
-    score.value = inputScore;
-    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
-        if (error != nil) {
-            NSLog(@"%@", [error localizedDescription]);
-        }
-    }];
-}
-
 
 @end
 
