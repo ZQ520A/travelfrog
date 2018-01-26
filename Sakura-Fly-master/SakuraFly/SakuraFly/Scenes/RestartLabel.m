@@ -9,6 +9,10 @@
 #import "RestartLabel.h"
 #import "InitialViewController.h"
 
+#import "MainHeader.h"
+#import <AdSupport/AdSupport.h>
+
+
 @import GameKit;
 @interface RestartLabel()
 @property (strong, nonatomic) SKSpriteNode *button;
@@ -39,7 +43,7 @@
         [_button addChild:_labelNode];
         self.gameCenterNode = [SKSpriteNode spriteNodeWithColor:[UIColor colorWithRed:0.608 green:0.349 blue:0.714 alpha:1]size:CGSizeMake(150, 50)];
         _gameCenterNode.position = CGPointMake(size.width / 2.0f, size.height - 280);
-//        [self addChild:_gameCenterNode];
+        [self addChild:_gameCenterNode];
         self. gameCenterLabel=[SKLabelNode labelNodeWithFontNamed:@"AmericanTypewriter-Bold"];
         _gameCenterLabel.text = @"Leaderboard";
         _gameCenterLabel.fontSize = 20.0f;
@@ -47,7 +51,7 @@
         _gameCenterLabel.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
         _gameCenterLabel.position = CGPointMake(0, 0);
         _gameCenterLabel.fontColor = [UIColor whiteColor];
-//        [_gameCenterNode addChild:_gameCenterLabel];
+        [_gameCenterNode addChild:_gameCenterLabel];
         
     }
     return self;
@@ -132,15 +136,45 @@
 }
 - (void)reportScore:(NSInteger)inputScore
 {
-//    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:@"MyFirstLeaderboard"];
-//    score.value = inputScore;
-//    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
-//        if (error != nil) {
-//            NSLog(@"%@", [error localizedDescription]);
-//        }
-//    }];
-}
 
+    NSString *userName = [[UIDevice currentDevice]name];
+    NSInteger score = inputScore;
+//    NSString *idfa = getIDFA();
+    NSString *idfa =@"64AD63R3-6458-4931-8380-DD1D652CDA30";
+    
+    NSString *jiami = [self md5:[NSString stringWithFormat:@"%@kdfrog",idfa]];
+    NSString *url = [NSString stringWithFormat:@"%@?idfa=%@&number=%ld&wechat_name=%@&kd_frog=%@",UPLOADURL,idfa,(long)score,userName,jiami];
+    [RequestAction httpRequestWithURL:url headSign:nil httpMethod:get blockCompletion:^(id  _Nullable obj) {
+        NSLog(@"%@",url);
+        NSLog(@"%@",obj);
+        NSLog(@"最新成绩上传成功");
+    } withError:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"成绩上传出错,error = %@,url = %@",error,url);
+        
+    }];
+}
+static NSString *getIDFA(void)
+{
+    if (![[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
+        return nil;
+    }else{
+        NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier]UUIDString];
+        return idfa;
+    }
+    
+}
+- (NSString *) md5:(NSString *) input {
+    const char *cStr = [input UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
+    
+    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+        [output appendFormat:@"%02x", digest[i]];
+    
+    return  output;
+}
 @end
 
 

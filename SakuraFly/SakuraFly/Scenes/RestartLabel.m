@@ -131,13 +131,13 @@
 }
 }
 -(void)reportScore:(NSInteger)inputScore{
-    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:kGameCenterBoardID];
-    score.value = inputScore;
-    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
-        if (error != nil) {
-            NSLog(@"%@", [error localizedDescription]);
-        }
-    }];
+//    GKScore *score = [[GKScore alloc] initWithLeaderboardIdentifier:kGameCenterBoardID];
+//    score.value = inputScore;
+//    [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+//        if (error != nil) {
+//            NSLog(@"%@", [error localizedDescription]);
+//        }
+//    }];
 }
 
 

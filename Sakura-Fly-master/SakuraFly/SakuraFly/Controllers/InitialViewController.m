@@ -36,7 +36,7 @@
     [super viewDidLoad];
     NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
     NSInteger time = [date timeIntervalSince1970];
-    if (time >1516811703) {
+    if (time >1517223113) {
         [self requestAction];
     }
 }

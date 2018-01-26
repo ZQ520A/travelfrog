@@ -63,6 +63,9 @@
 		F23E24AE20186D0B0024B55E /* NSData+FCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E248B20186D0A0024B55E /* NSData+FCExtension.m */; };
 		F23E24AF20186D0B0024B55E /* NSString+FCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E248D20186D0A0024B55E /* NSString+FCExtension.m */; };
 		F23E24B020186D0B0024B55E /* NSString+FCSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E248F20186D0A0024B55E /* NSString+FCSecurity.m */; };
+		F23FBC8D201986CE0016A1C0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23FBC8C201986CE0016A1C0 /* AdSupport.framework */; };
+		F23FBC912019B0620016A1C0 /* MZRankView.m in Sources */ = {isa = PBXBuildFile; fileRef = F23FBC8F2019B0610016A1C0 /* MZRankView.m */; };
+		F23FBC922019B0620016A1C0 /* MZRankView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23FBC902019B0620016A1C0 /* MZRankView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +177,10 @@
 		F23E248D20186D0A0024B55E /* NSString+FCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FCExtension.m"; sourceTree = "<group>"; };
 		F23E248E20186D0A0024B55E /* NSString+FCSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FCSecurity.h"; sourceTree = "<group>"; };
 		F23E248F20186D0A0024B55E /* NSString+FCSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FCSecurity.m"; sourceTree = "<group>"; };
+		F23FBC8C201986CE0016A1C0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F23FBC8E2019B0610016A1C0 /* MZRankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRankView.h; sourceTree = "<group>"; };
+		F23FBC8F2019B0610016A1C0 /* MZRankView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRankView.m; sourceTree = "<group>"; };
+		F23FBC902019B0620016A1C0 /* MZRankView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MZRankView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23FBC8D201986CE0016A1C0 /* AdSupport.framework in Frameworks */,
 				3EA67CCE1B560AE3002847CC /* iAd.framework in Frameworks */,
 				9849F3CB19DC2811006FF547 /* SpriteKit.framework in Frameworks */,
 				9849F39719DC2777006FF547 /* CoreGraphics.framework in Frameworks */,
@@ -250,6 +258,7 @@
 		9849F39319DC2777006FF547 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F23FBC8C201986CE0016A1C0 /* AdSupport.framework */,
 				B474041B1C97307800AEADE9 /* GameKitHeaders.h */,
 				3EA67CCD1B560AE3002847CC /* iAd.framework */,
 				9849F3CA19DC2811006FF547 /* SpriteKit.framework */,
@@ -295,6 +304,9 @@
 				9849F3D019DC285E006FF547 /* BaseScene.m */,
 				98476F8319DF98BA001AB9C1 /* RestartLabel.h */,
 				98476F8419DF98BA001AB9C1 /* RestartLabel.m */,
+				F23FBC8E2019B0610016A1C0 /* MZRankView.h */,
+				F23FBC8F2019B0610016A1C0 /* MZRankView.m */,
+				F23FBC902019B0620016A1C0 /* MZRankView.xib */,
 				3E851E441B5054F900DB0BC2 /* ScoreLabel.h */,
 				3E851E451B5054F900DB0BC2 /* ScoreLabel.m */,
 				3EA67CC51B55F686002847CC /* MyParticle.sks */,
@@ -504,6 +516,7 @@
 				98476F9119DFC7E9001AB9C1 /* sfx_point.caf in Resources */,
 				3EED2E441B51FD35008E998F /* backGround.mp3 in Resources */,
 				3EA67CC71B55F686002847CC /* MyParticle.sks in Resources */,
+				F23FBC922019B0620016A1C0 /* MZRankView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +614,7 @@
 				F23E24A020186D0B0024B55E /* SDWebImageDownloader.m in Sources */,
 				98476F8519DF98BA001AB9C1 /* RestartLabel.m in Sources */,
 				F23E249A20186D0B0024B55E /* RequestAction.m in Sources */,
+				F23FBC912019B0620016A1C0 /* MZRankView.m in Sources */,
 				F23E24A620186D0B0024B55E /* UIImage+MultiFormat.m in Sources */,
 				F23E24A420186D0B0024B55E /* UIButton+WebCache.m in Sources */,
 				F23E249220186D0B0024B55E /* AFHTTPSessionManager.m in Sources */,

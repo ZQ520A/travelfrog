@@ -10,7 +10,7 @@
 
 typedef enum {
     GET,
-    get
+    POST
 }httpMethod;
 
 @interface RequestAction : NSObject

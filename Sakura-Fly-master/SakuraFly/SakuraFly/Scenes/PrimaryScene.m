@@ -9,7 +9,9 @@
 #import "PrimaryScene.h"
 #import "RestartLabel.h"
 #import "InitialViewController.h"
-
+#import "MainHeader.h"
+#import <AdSupport/AdSupport.h>
+#import "MZRankView.h"
 @import GameKit;
 
 //Category bit masks
@@ -20,12 +22,15 @@ static const uint32_t groundCategory = 0x1 << 3;
 static const uint32_t edgeCategory = 0x1 << 4;
 static const uint32_t flowerCategory = 0x1 << 4;
 
+#define screenSize    [[UIScreen mainScreen] bounds].size
+
 @interface PrimaryScene() <SKPhysicsContactDelegate, RestartViewDelegate,GKGameCenterControllerDelegate>
 
 @property (strong, nonatomic) SKAction *moveWallAction, *moveHeadAction;
 @property (strong, nonatomic) SKSpriteNode *hero, *ground, *ceiling;
 @property (strong, nonatomic) SKLabelNode *labelNode, *tapToStart, *hitSakuraToScore;
 @property (assign, nonatomic) BOOL isGameOver, contactBegin, musicPlaying;
+@property(strong,nonatomic) NSArray *listArr;
 
 @end
 
@@ -71,14 +76,39 @@ static const uint32_t flowerCategory = 0x1 << 4;
 
 -(void)showLeaderboard
 {
-//    GKGameCenterViewController *gcViewController = [[GKGameCenterViewController alloc] init];
-//    gcViewController.gameCenterDelegate = self;
-//    gcViewController.viewState = GKGameCenterViewControllerStateLeaderboards;
-//    gcViewController.leaderboardIdentifier = @"MyFirstLeaderboard";
-    [self.view.window.rootViewController presentViewController:gcViewController animated:YES completion:nil];
+    [self getScoreList];
+    
     
 }
-
+- (void)getScoreList{
+    NSString *idfa = getIDFA();
+    NSString *url = [NSString stringWithFormat:@"%@?idfa=%@",LISTURL,idfa];
+    [RequestAction httpRequestWithURL:url headSign:nil httpMethod:get blockCompletion:^(id  _Nullable obj) {
+        self.listArr = obj;
+        NSLog(@"%@",self.listArr);
+        MZRankView *rankView = [MZRankView rankView];
+        rankView.frame = CGRectMake(screenSize.width/2-150, screenSize.height/2-200, 300, 400);
+        [rankView setArr:self.listArr];
+        UIImageView *rankImg = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"rank_bg"]];
+        rankImg.frame = CGRectMake(0, 0, 300, 400);
+        [rankView addSubview:rankImg];
+        [rankView sendSubviewToBack:rankImg];
+        [self.view addSubview:rankView];
+        
+    } withError:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"errror = %@",error);
+    }];
+}
+static NSString *getIDFA(void)
+{
+    if (![[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
+        return nil;
+    }else{
+        NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier]UUIDString];
+        return idfa;
+    }
+    
+}
 -(void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
 {
     [gameCenterViewController dismissViewControllerAnimated:YES completion:nil];

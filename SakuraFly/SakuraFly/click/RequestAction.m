@@ -45,21 +45,12 @@
                 errorblock(task,error);
             }
         }];
-    }else if(Method == get){
-        [httpsession GET:str parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-//            id obj = [responseObject aesJsonObject];
-            id obj  = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-            NSLog(@"%@",obj);
-            
-            if (finishBlock) {
-                finishBlock(obj);
-            }
-            
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            if (errorblock) {
-                errorblock(task,error);
-            }
-        }];
+        
+//        [httpsession GET:str parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//            
+//        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//           
+//        }];
     }
     
 }
